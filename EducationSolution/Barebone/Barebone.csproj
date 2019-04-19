@@ -1,12 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Styles\**;Scripts\**;Views\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Scripts\barebone.js" />
+    <None Remove="Styles\barebone.css" />
+    <None Remove="Views\Barebone\Index.cshtml" />
+    <None Remove="Views\Shared\Components\Menu\Default.cshtml" />
+    <None Remove="Views\Shared\Components\Scripts\Default.cshtml" />
+    <None Remove="Views\Shared\Components\StyleSheets\Default.cshtml" />
+    <None Remove="Views\Shared\_Layout.cshtml" />
+    <None Remove="Views\Shared\_Menu.cshtml" />
+    <None Remove="Views\Shared\_MenuItem.cshtml" />
+    <None Remove="Views\Shared\_Script.cshtml" />
+    <None Remove="Views\Shared\_Scripts.cshtml" />
+    <None Remove="Views\Shared\_StyleSheet.cshtml" />
+    <None Remove="Views\Shared\_StyleSheets.cshtml" />
+    <None Remove="Views\Shared\_ViewImports.cshtml" />
+    <None Remove="Views\Shared\_ViewStart.cshtml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ExtCore.Data.Abstractions" Version="4.0.0" />
-    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
