@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{A195C98F-700B-48F8-8026-D5623D21EE18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{A195C98F-700B-48F8-8026-D5623D21EE18}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{4D89AC96-4DBA-4A53-B792-25C614ED0F13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{151C3E8E-E075-47F2-B2BA-6751A96906A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{151C3E8E-E075-47F2-B2BA-6751A96906A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barebone", "Barebone\Barebone.csproj", "{3424B283-3712-4AEA-B8B5-A4FF9E8952DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Barebone", "Barebone\Barebone.csproj", "{3424B283-3712-4AEA-B8B5-A4FF9E8952DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{542233B9-EB2C-454B-9A31-40C06D231E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Data.Entities", "Core.Data.Entities\Core.Data.Entities.csproj", "{63656CB1-E1D5-4186-BEFD-3A35E46DDC15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +33,18 @@ Global
 		{3424B283-3712-4AEA-B8B5-A4FF9E8952DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3424B283-3712-4AEA-B8B5-A4FF9E8952DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3424B283-3712-4AEA-B8B5-A4FF9E8952DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63656CB1-E1D5-4186-BEFD-3A35E46DDC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63656CB1-E1D5-4186-BEFD-3A35E46DDC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63656CB1-E1D5-4186-BEFD-3A35E46DDC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63656CB1-E1D5-4186-BEFD-3A35E46DDC15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3424B283-3712-4AEA-B8B5-A4FF9E8952DD} = {4D89AC96-4DBA-4A53-B792-25C614ED0F13}
+		{542233B9-EB2C-454B-9A31-40C06D231E51} = {4D89AC96-4DBA-4A53-B792-25C614ED0F13}
+		{63656CB1-E1D5-4186-BEFD-3A35E46DDC15} = {542233B9-EB2C-454B-9A31-40C06D231E51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FBADBB6-420C-41DE-B62A-2D909D224E9B}
