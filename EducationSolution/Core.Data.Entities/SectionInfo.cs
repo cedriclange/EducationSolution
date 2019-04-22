@@ -1,10 +1,11 @@
-﻿using System;
+﻿using ExtCore.Data.Entities.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Core.Data.Entities
 {
-    public class SectionInfo
+    public class SectionInfo : IEntity
     {
         public SectionInfo()
         {
