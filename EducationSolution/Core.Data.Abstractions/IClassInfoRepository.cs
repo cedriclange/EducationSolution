@@ -3,14 +3,15 @@ using ExtCore.Data.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Core.Data.Abstractions
 {
     public interface IClassInfoRepository : IRepository
     {
-        IEnumerable<ClassInfo> All();
-        IEnumerable<ClassInfo> FromSection(int id);
-        ClassInfo WithKey(int id);
-        void Add(ClassInfo info); 
+        Task<IEnumerable<ClassInfo>> All();
+        Task<IEnumerable<ClassInfo>> FromSection(int id);
+        Task<ClassInfo> WithKey(int id);
+        void Create(ClassInfo info); 
     }
 }

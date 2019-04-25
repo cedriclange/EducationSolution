@@ -1,5 +1,5 @@
 ﻿@model Barebone.ViewModels.Shared.ScriptsViewModel
-@foreach (var script in this.Model.Scripts)
+@foreach (var script in Model.Scripts)
 {
-    @Html.PartialAsync("_Script", script)
+    await Html.RenderPartialAsync("_Script", script);
 }

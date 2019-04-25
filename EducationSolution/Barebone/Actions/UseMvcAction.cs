@@ -12,7 +12,7 @@ namespace Barebone.Actions
 
         public void Execute(IRouteBuilder routeBuilder, IServiceProvider serviceProvider)
         {
-            routeBuilder.MapRoute(name: "Barebone", template: "{controller}/{action}", defaults: new { });
+            routeBuilder.MapRoute(name: "Default", template: "{controller}/{action}", defaults: new {controller = "Barebone", action="Index" });
         }
     }
 }

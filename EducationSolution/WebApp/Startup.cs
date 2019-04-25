@@ -13,8 +13,8 @@ namespace WebApp
         private string extensionPath;
         public Startup(IConfiguration config, IHostingEnvironment hostingEnvironment)
         {
-            this.configuration = config;
-            this.extensionPath = hostingEnvironment.ContentRootPath + this.configuration["Extensions:Path"];
+            configuration = config;
+            extensionPath = hostingEnvironment.ContentRootPath + configuration["Extensions:Path"];
          
         }
         public void ConfigureServices(IServiceCollection services)

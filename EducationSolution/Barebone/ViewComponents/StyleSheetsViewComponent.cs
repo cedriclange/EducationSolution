@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Barebone.ViewComponents
 {
-    public class StyleSheetsComponent : ViewComponent
+    public class StyleSheetsViewComponent : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public Task<IViewComponentResult> InvokeAsync()
         {
-            return this.View(new StyleSheetsViewModelFactory().Create());
+            return Task.FromResult<IViewComponentResult>(View(new StyleSheetsViewModelFactory().Create()));
         }
     }
 }

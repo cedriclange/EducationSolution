@@ -1,7 +1,7 @@
 ﻿@model Barebone.ViewModels.Shared.MenuViewModel
 <ul class="nav flex-column">
-    @foreach (var menuItem in this.Model.MenuItems)
+    @foreach (var menuItem in Model.MenuItems)
     {
-        @Html.PartialAsync("_MenuItem", menuItem)
+        await Html.RenderPartialAsync("_MenuItem", menuItem);
     }
 </ul>

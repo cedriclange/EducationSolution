@@ -1,2 +1,4 @@
-﻿@model Barebone.ViewModels.Shared.MenuItemViewModel
-@Html.PartialAsync("_Menu",this.Model)
+﻿@model Barebone.ViewModels.Shared.MenuViewModel
+@{
+    await Html.RenderPartialAsync("_Menu", Model);
+}

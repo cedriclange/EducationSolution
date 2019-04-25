@@ -1,2 +1,4 @@
 ﻿@model Barebone.ViewModels.Shared.ScriptsViewModel
-@Html.PartialAsync("_Scripts",this.Model)
+@{
+    await Html.RenderPartialAsync("_Scripts", Model);
+}

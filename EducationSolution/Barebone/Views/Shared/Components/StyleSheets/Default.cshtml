@@ -1,2 +1,4 @@
 ﻿@model Barebone.ViewModels.Shared.StyleSheetsViewModel
-@Html.PartialAsync("_StyleSheets",this.Model)
+@{
+    await Html.RenderPartialAsync("_StyleSheets", Model);
+}

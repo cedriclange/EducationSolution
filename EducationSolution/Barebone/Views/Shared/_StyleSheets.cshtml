@@ -1,5 +1,5 @@
 ﻿@model Barebone.ViewModels.Shared.StyleSheetsViewModel
-@foreach (var styleSheet in this.Model.StyleSheets)
+@foreach (var styleSheet in Model.StyleSheets)
 {
-    @Html.PartialAsync("_StyleSheet", styleSheet)
+    await Html.RenderPartialAsync("_StyleSheet", styleSheet);
 }

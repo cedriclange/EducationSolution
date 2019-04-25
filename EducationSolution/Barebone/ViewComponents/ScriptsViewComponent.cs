@@ -9,9 +9,9 @@ namespace Barebone.ViewComponents
 {
     public class ScriptsViewComponent : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public Task<IViewComponentResult> InvokeAsync()
         {
-            return View(new ScriptsViewModelFactory().Create());
+            return Task.FromResult<IViewComponentResult>(View(new ScriptsViewModelFactory().Create()));
         }
     }
 }

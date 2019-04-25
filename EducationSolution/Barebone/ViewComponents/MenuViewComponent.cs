@@ -9,9 +9,10 @@ namespace Barebone.ViewComponents
 {
     public class MenuViewComponent : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public Task<IViewComponentResult> InvokeAsync()
         {
-            return this.View(new MenuViewModelFactory().Create());
+           
+            return Task.FromResult<IViewComponentResult>(View (new MenuViewModelFactory().Create()));
         }
     }
 }

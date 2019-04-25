@@ -12,7 +12,7 @@ namespace Core.Data.Entities
         public string Grade { get; set; }
         public bool IsPrimary { get; set; }
         public bool IsSecondary { get; set; }
-        public int SectionInfo { get; set; }
+        public int SectionId { get; set; }
         //foreign Keys
         public SectionInfo Section { get; set; }
 

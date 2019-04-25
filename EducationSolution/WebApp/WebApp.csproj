@@ -16,6 +16,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Barebone\Barebone.csproj" />
+    <ProjectReference Include="..\Core.EFCore.Sqlite\Core.EFCore.Sqlite.csproj" />
+    <ProjectReference Include="..\ES.Core\ES.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

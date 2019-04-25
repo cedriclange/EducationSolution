@@ -3,6 +3,7 @@ using ExtCore.Data.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Core.Data.Abstractions
 {
@@ -10,5 +11,6 @@ namespace Core.Data.Abstractions
     {
         void Add(SchoolInfo info);
         void Edit(SchoolInfo info);
+        Task<SchoolInfo> WithKey(int id);
     }
 }
